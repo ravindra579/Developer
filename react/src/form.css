@@ -1,0 +1,88 @@
+.form {
+  padding:20px
+}
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.centered-table {
+  border-collapse: collapse;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+.centered-table th,
+.centered-table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: grid;
+  gap: 10px;
+}
+
+.form-field {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='date'],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+}
+
+.radio-label {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 10px;
+  }
+
+  .form-field {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+}
